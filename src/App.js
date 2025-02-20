@@ -23,7 +23,13 @@ function App() {
       
       if (hashPart.startsWith('pako:')) {
         const pakoCode = hashPart.substring(5); // Remove 'pako:' prefix
-        const newImageUrl = `https://mermaid.ink/img/pako:${pakoCode}?type=${imageType}&width=${imageWidth}`;
+        
+        // Special handling for hostname - only replace mermaid.live with mermaid.ink
+        const hostname = url.hostname === 'mermaid.live' 
+          ? 'mermaid.ink'  // Replace only if it's mermaid.live
+          : url.hostname;   // Otherwise keep the original hostname
+        
+        const newImageUrl = `https://${hostname}/img/pako:${pakoCode}?type=${imageType}&width=${imageWidth}`;
         setImageUrl(newImageUrl);
       } else {
         throw new Error('Invalid URL format');
