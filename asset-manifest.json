@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mermaid-converter/static/css/main.48a9140b.css",
+    "main.js": "/mermaid-converter/static/js/main.ecf0e387.js",
+    "static/js/453.acd35eba.chunk.js": "/mermaid-converter/static/js/453.acd35eba.chunk.js",
+    "index.html": "/mermaid-converter/index.html",
+    "main.48a9140b.css.map": "/mermaid-converter/static/css/main.48a9140b.css.map",
+    "main.ecf0e387.js.map": "/mermaid-converter/static/js/main.ecf0e387.js.map",
+    "453.acd35eba.chunk.js.map": "/mermaid-converter/static/js/453.acd35eba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48a9140b.css",
+    "static/js/main.ecf0e387.js"
+  ]
+}
